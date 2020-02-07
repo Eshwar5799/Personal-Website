@@ -1,0 +1,175 @@
+/**Background body **/
+body {
+	background: linear-gradient(-45deg, #50423f, #8a6e7a, #dce9e6);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.div-about{
+    
+    background-image: url("../images/background.jpg");
+    background-position:center;
+   
+    /** Background-size:cover **/
+    background-size:cover;
+    background-attachment: fixed;
+    filter: grayscale(50%) blur(2px);
+    padding-top: 10px;
+	height: 550px;
+	width:100%;
+}
+.bg-text{
+    color: gray;
+    
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+
+}
+h1{
+    color:#f5f6fa;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+h3{
+    color:#f5f6fa;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.element{
+    color:#f5f6fa;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+p{
+    color:#f5f6fa;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cursor{
+    opacity: 1;
+}
+.incline-line{
+    width: 100%;
+    margin: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    transform: rotate(2.5deg);
+    border-color: #54a0ff;
+}
+
+.img-fluid{
+    
+    
+    height: 450px;
+    display: block;
+   text-align: center;
+   margin-left: auto;
+  margin-right: auto; 
+}
+.card{
+    margin-top: 15px;
+    left: 25%;
+    padding-top: 10px;
+    width: 50%;
+    text-align: center;
+    color: #636e72;
+}
+.card-body{
+    font-size: large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    
+}
+.card-title{
+    text-decoration: underline;
+}
+.card-text{
+    font-size: large;
+    font-weight: bold;
+    color: #a29bfe;
+}
+.incline-line-small{
+    width: 100%;
+    margin: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    transform: rotate(2.5deg);
+    border-color: #54a0ff;
+}
+.incline-line-small-rot{
+    width: 100%;
+    margin: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    transform: rotate(2.deg);
+    border-color: #54a0ff;
+}
+/**Timeline **/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.ed{
+    font-family: sans-serif;
+    font-style: italic;
+    color: black;
+    font-size: medium;
+}
+.float-right{
+    text-decoration: none;
+    color: rgba(red, rgb(131, 184, 131), blue, alpha);
+}
+#card_proj{
+    text-align: left;
+}
+.tex-ri{
+    text-align: right;
+}
