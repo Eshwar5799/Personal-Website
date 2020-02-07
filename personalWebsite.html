@@ -41,7 +41,7 @@
     <body>
     <header>
         <!--Navbar Bootstrap-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar" >
         <a class="navbar brand" href="#">Eshwar sv</a>
         <!--Hamburger Button/Toggle Bar-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -444,9 +444,23 @@ let InterestsHeight=document.getElementById("Interestssdiv").clientHeight;
 let Contactsheight=document.getElementById("Contactsdiv").clientHeight;
 //console.log("The Contacts Div height is: " + Contactsheight);
 
+//Sticky Header
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 
 
     </script>
 <!--End of Script-->
-    
+<!--The End-->
 </html>
