@@ -1,0 +1,42 @@
+body {
+	background: linear-gradient(-45deg,#d5e1f0,rgb(240, 238, 238), rgb(71, 68, 68));
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*#video_center
+{
+    margin-top:120px;
+    margin-left:400px;
+} */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    margin-left: 290px;
+    margin-top: 150px;
+}
